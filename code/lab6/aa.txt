@@ -1,0 +1,90 @@
+Router
+---------------
+         --- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: no
+
+
+Press RETURN to get started!
+
+
+
+Router>en
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#int fa0/0
+Router(config-if)#ip add 192.168.10.63 255.255.255.0
+Router(config-if)#no shut
+
+Router(config-if)#
+%LINK-5-CHANGED: Interface FastEthernet0/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/0, changed state to up
+
+Router(config-if)#exit
+Router(config)#ip dhcp pool VOICE
+Router(dhcp-config)#network 192.168.10.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.10.63
+Router(dhcp-config)#option 150 ip 192.168.10.63
+Router(dhcp-config)#exit
+Router(config)#telephony-service
+Router(config-telephony)#max-dn 4
+Router(config-telephony)#max-ephone 10
+Router(config-telephony)#ip source-address 192.168.10.63 port 2000
+Router(config-telephony)#auto assign 1 to 5
+Router(config-telephony)#exit
+
+
+Router(config)#ephone-dn 1
+Router(config-ephone-dn)#%LINK-3-UPDOWN: Interface ephone_dsp DN 1.1, changed state to up
+
+Router(config-ephone-dn)#number 2130
+Router(config-ephone-dn)#exit
+Router(config)#ephone-dn 2
+Router(config-ephone-dn)#%LINK-3-UPDOWN: Interface ephone_dsp DN 2.1, changed state to up
+
+%IPPHONE-6-REGISTER: ephone-2 IP:192.168.10.1 Socket:2 DeviceType:Phone has registered.
+
+Router(config-ephone-dn)#%DHCPD-4-PING_CONFLICT: DHCP address conflict:  server pinged 192.168.10.4.
+%DHCPD-4-PING_CONFLICT: DHCP address conflict:  server pinged 192.168.10.3.
+
+Router(config-ephone-dn)#number 2131
+Router(config-ephone-dn)#exit
+Router(config)#ephone-dn 3
+Router(config-ephone-dn)#%LINK-3-UPDOWN: Interface ephone_dsp DN 3.1, changed state to up
+
+Router(config-ephone-dn)#number 2132
+Router(config-ephone-dn)#ephone-dn 3
+%IPPHONE-6-REGISTER: ephone-4 IP:192.168.10.4 Socket:2 DeviceType:Phone has rexit
+Router(config)#exit
+%IPPHONE-6-REGISTER: ephone-1 IP:192.168.10.3 Socket:2 DeviceType:Phone has registered.
+%DHCPD-4-PING_CONFLICT: DHCP address conflict:  server pinged 192.168.10.3.
+
+Router#
+%SYS-5-CONFIG_I: Configured from console by console
+
+Router#
+Router#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#ephone-dn 4
+Router(config-ephone-dn)#%LINK-3-UPDOWN: Interface ephone_dsp DN 4.1, changed state to up
+
+Router(config-ephone-dn)#number 2133
+Router(config-ephone-dn)#
+%IPPHONE-6-REGISTER: ephone-3 IP:192.168.10.2 Socket:2 DeviceType:Phone has registered.
+
+Router(config-ephone-dn)#exit
+Router(config)#
+
+
+Switch
+-----------------
+
+
+Switch>en
+Switch#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#int range fa0/1-10
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#switchport voice vlan 1
+Switch(config-if-range)#
