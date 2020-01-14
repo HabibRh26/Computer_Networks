@@ -28,4 +28,4 @@ Configuration Layout | Simulation
 
 Mail Server 1 | Mail Server 2
 ------------ | -------------
-![Implementation Mail Server](gifs/folder_8/2.PNG) | ![Implementation Mail Server](gifs/folder_8/3.PNG)
+![Implementation Mail Server](gifs/folder_8/3.PNG) | ![Implementation Mail Server](gifs/folder_8/2.PNG)
