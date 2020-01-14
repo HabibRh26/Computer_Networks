@@ -1,4 +1,6 @@
 # Computer_Networks
+## Introduction:
+This repository contains some of the Computer Networks fundamental tasks that have been done in the software Cisco Packet Tracer.These tasks were performed for the sake of **computer network Lab** course in 4th year 1st semester of my Undergraduate degree and the course was supervised by the chairman of our department **Professor Dr.Emdadul Islam** sir
 ## packet through Hub and Switch
 <img src="https://github.com/HabibRh26/Computer_Networks/blob/master/gifs/folder_1/hub_2switch_pc.gif" /></br>
 ## packet through Router
@@ -11,7 +13,7 @@
 ![Configuration Layout of DNS Server](gifs/folder_5/config.PNG "Title is DNS")</br>
 *Configuration Layout of DNS Server*</br>
 ![DNS_Server_output_1](https://github.com/HabibRh26/Computer_Networks/blob/master/gifs/folder_5/DNS_1.PNG "Title is DNS")
-*Example DNS Server 1* </br></br>
+**Example DNS Server 1** </br></br>
 ![DNS_Server_output_2](https://github.com/HabibRh26/Computer_Networks/blob/master/gifs/folder_5/DNS_2.PNG)
 **Example DNS Server 2** </br>
 ## IP Telephony
@@ -21,7 +23,7 @@ Configuration Layout | Simulation
 ![configuration](https://github.com/HabibRh26/Computer_Networks/blob/master/gifs/folder_6/1.PNG)| ![simulation](gifs/folder_6/IP_telephony.gif)
 ## Implementation of OSPF Algorithm
 ![Implementation of OSPF Algorithm](gifs/folder_7/implementation_ospf.gif "Implementation of OSPF Algorithm")
-*Implementation of OSPF Algorithm* </br>
+**Implementation of OSPF Algorithm** </br>
 
 ## Implementation of Mail Server
 ![Implementation Mail Server](gifs/folder_8/1.PNG)</br>
