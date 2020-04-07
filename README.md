@@ -1,6 +1,7 @@
 # Computer_Networks
 ## Introduction:
-This repository contains some of the Computer Networks fundamental tasks that have been done in the software Cisco Packet Tracer.These tasks were performed for the sake of **computer network Lab** course in 4th year 1st semester of my Undergraduate degree and the course was supervised by the chairman of our department **Professor Dr.Emdadul Islam** sir
+This repository contains some of the Computer Networks fundamental tasks that have been done in the software Cisco Packet Tracer.These tasks were performed for the sake of **COMPUTER NETWORKS LAB** course in 4th year 1st semester of my Undergraduate degree and the course was supervised by the chairman of our department **Professor Dr.Emdadul Islam** sir.
+The experiments are as follows with output:
 ## packet through Hub and Switch
 <img src="https://github.com/HabibRh26/Computer_Networks/blob/master/gifs/folder_1/hub_2switch_pc.gif" /></br>
 ## packet through Router
